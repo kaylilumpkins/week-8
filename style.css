@@ -37,9 +37,20 @@ nav{
     color: #a66;
 }
 
+a:link{
+    text-decoration: underline;
+    color: #a66;
+}
+a:hover{
+    text-decoration: none;
+    color: #a66;
+}
 a {
-  outline: none;
-  
+    target-name:new;
+    target-new:tab;
+}
+a:visited {
+  color: #a66;
 }
 
 /* Layout */
@@ -52,12 +63,16 @@ main {
 
 }
 
-aside {
-
+aside p{
+    padding-left: 40px;
+    line-height: 1.7;
+}
+aside p a{
+    text-decoration: none;
 }
 
 nav {
-
+  text-decoration: none;
 }
 
 footer {
@@ -79,15 +94,12 @@ header, footer {
 
 main {
  display: flex;
-
 }
 
 div {
   flex: 3 50px;
   flex-wrap: nowrap;
 }
-
-
 
 section {
   flex-wrap: wrap;
@@ -103,18 +115,7 @@ aside {
   display: flex;
   flex-direction: column;
   color: #a66;
-
 }
-
-.flex-container{
-    list-style: none;
-    padding: 4px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
 
 button {
   font-size: 18px;
@@ -123,5 +124,5 @@ button {
   display: block;
   align-items: center;
   text-align: center;
-
+  color: white;
 }
