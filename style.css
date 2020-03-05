@@ -2,12 +2,44 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
 }
 
 body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-align: left;
+  padding: 1.5rem 0;
+}
+
+p {
+  text-indent: 20px;
+}
+
+nav{
+    padding: 0.3rem 0;
+    font-size: 1.2rem;
+    outline: none;
+    color: #a66;
+}
+
+a {
+  outline: none;
+  
 }
 
 /* Layout */
@@ -47,7 +79,7 @@ header, footer {
 
 main {
  display: flex;
- flex: 1 100px;
+
 }
 
 div {
@@ -74,19 +106,15 @@ aside {
 
 }
 
-nav ul li a{
-     width: 250px;
-     padding: 1rem;
-     text-align: center;
-     color: #a66;
-     display: inline-block;
-     justify-content: flex-end;
-
+.flex-container{
+    list-style: none;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-nav {
-  align-items: center;
-}
 
 button {
   font-size: 18px;
