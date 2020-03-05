@@ -40,22 +40,27 @@ header, section, aside, nav, footer {
 
 header, footer {
   border-top: 5px solid #a66;
-  border-bottom: 5px dashed #a66;
+  border-bottom: 5px solid #a66;
 }
 
 /* WRITE YOUR CODE BELOW HERE */
 
 main {
  display: flex;
+ flex: 1 100px;
 }
+
+div {
+  flex: 3 50px;
+  flex-wrap: nowrap;
+}
+
+
 
 section {
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-
-section:nth-of-type(2) {
-
+  flex-grow: 4;
 }
 
 article {
@@ -64,9 +69,31 @@ article {
 
 aside {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  color: #a66;
+
+}
+
+nav ul li a{
+     width: 250px;
+     padding: 1rem;
+     text-align: center;
+     color: #a66;
+     display: inline-block;
+     justify-content: flex-end;
+
 }
 
 nav {
-  
+  align-items: center;
+}
+
+button {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 70%;
+  display: block;
+  align-items: center;
+  text-align: center;
+
 }
